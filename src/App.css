@@ -36,3 +36,158 @@
     transform: rotate(360deg);
   }
 }
+
+/*CSS starts here */
+body {
+  margin: 0;
+  background-color: rgb(32, 30, 35);
+  ;
+}
+
+.navbar {
+  min-height: 4em;
+  background-color: rgb(32, 30, 35);
+  margin: 0;
+  position: relative;
+}
+
+.nav{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(32, 30, 35);
+}
+
+.navbar {
+  min-height: 4em;
+  background-color: rgb(32, 30, 35);
+  margin: 0;
+  position: relative;
+
+}
+.bground {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+}
+
+h3 {
+  color: white;
+  position: absolute;
+  animation: blinker 5s linear infinite;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.nav{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact {
+  margin: auto;
+  width: 50%;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(238, 238, 238);
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  color: rgb(238, 238, 238);
+}
+
+.personal {
+margin: auto;
+width: 50%;
+margin-top: 15%;
+/* border: 3px solid green; */
+padding: 10px;
+}
+
+ul > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  zoom:1;
+  *display:inline;
+  padding-right: 6rem;
+  /* this fix is needed for IE7- */
+}
+
+.icon {
+  margin-left: 1em;
+}
+
+#twitter {
+  filter: invert(46%) sepia(67%) saturate(1260%) hue-rotate(177deg) brightness(99%) contrast(92%);
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(101%); */
+
+}
+
+#linkedin {
+  filter: invert(34%) sepia(83%) saturate(528%) hue-rotate(173deg) brightness(92%) contrast(94%);
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(101%); */
+
+}
+
+#github {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(101%);
+}
+
+#blog {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(101%);
+}
+
+/* card styling */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
