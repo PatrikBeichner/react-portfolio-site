@@ -6,33 +6,48 @@ function RenderStars(props) {
 
   console.log(vw, vh);
 
-  let numStars = 23;
+  const numStars = 23;
   const starfield = document.getElementById('bground');
   //run on load
   window.addEventListener('load', GenerateStars);
 
   function GenerateStars() {
+    // const starStyle = {
+    //     fontSize: Math.random() * (2 - 0.83) + 0.83 + 'em',
+    //     top: Math.floor(Math.random() * vh),
+    //     left: Math.floor(Math.random() * vw),
+    //     animationdelay: Math.random() + 1 + 's'
+    // }
     // event.stopPropagation;
     //create stars and place them randomly based on width and height
-    for (let i = 0; i < numStars; i++) {
-      const star = document.createElement('h3');
-      star.innerHTML = '*';
-      let randomTop = Math.floor(Math.random() * vh);
-      let randomLeft = Math.floor(Math.random() * vw);
+    for (let i = 0; i < 23; i++) {
+    //   const star = document.createElement('h3');
+    //   star.innerHTML = '*';
+    //   let randomTop = Math.floor(Math.random() * vh);
+    //   let randomLeft = Math.floor(Math.random() * vw);
 
       //tests
-      console.log(randomTop);
-      console.log(randomLeft);
-
+    //   console.log('random top ' + randomTop);
+    //   console.log('random left ' + randomLeft);
+      console.log('this is loop #: ' + i)
+      const starStyle = {
+        fontSize: Math.random() * (2 - 0.83) + 0.83 + 'em',
+        top: Math.floor(Math.random() * vh),
+        left: Math.floor(Math.random() * vw),
+        animationdelay: Math.random() + 1 + 's'
+    }
       //star styling
-      star.style.top = randomTop + 'px';
-      star.style.left = randomLeft + 'px';
-      star.style.webkitAnimationDelay = Math.random() + 1 + 's';
-      star.style.fontSize = Math.random() * (2 - 0.83) + 0.83 + 'em';
+    //   star.style.top = randomTop + 'px';
+    //   star.style.left = randomLeft + 'px';
+    //   star.style.webkitAnimationDelay = Math.random() + 1 + 's';
+    //   star.style.fontSize = Math.random() * (2 - 0.83) + 0.83 + 'em';
 
       //test
-      console.log('stars');
-      starfield.appendChild(star);
+      console.log(starStyle);
+    //   starfield.appendChild(star);
+      return (
+          <h3 style={starStyle}>*</h3>
+      )
     }
   }
   return (
@@ -52,7 +67,7 @@ function Greeting(props) {
   )
 }
 
-function Home(props) {
+function Test(props) {
   return (
     <div id="bground">
       <RenderStars />
@@ -99,4 +114,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default Test;
