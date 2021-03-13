@@ -6,19 +6,19 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 function GenerateStars(num) {
   const arr = [];
   for (let i = 0; i <= 22; i++) {
-    // let starStyle = {
+
       let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
       let tp = Math.floor(Math.random() * vh); //top
       let lt = Math.floor(Math.random() * vw); //left
       let ad = Math.random() + 1 + 's'; //delay
-    // };
+
     arr.push(
     <h3 style={{
         fontSize: fs,
         top: tp,
         left: lt,
         animationDelay: ad,
-    }}
+        }}
     >*</h3>
     );
   }
