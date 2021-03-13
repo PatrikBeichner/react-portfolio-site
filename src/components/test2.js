@@ -3,57 +3,29 @@ import React from 'react';
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-function RenderStars(num) {
-  //   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-  //   const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-
-  console.log(vw, vh);
-
-  const numStars = 23;
-  const starfield = document.getElementById('bground');
-  //run on load
-  window.addEventListener('load', GenerateStars(num));
-
-  //   function GenerateStars() {
-  //     for (let i = 0; i < 23; i++) {
-  //       console.log('this is loop #: ' + i)
-  //       const starStyle = {
-  //         fontSize: Math.random() * (2 - 0.83) + 0.83 + 'em',
-  //         top: Math.floor(Math.random() * vh),
-  //         left: Math.floor(Math.random() * vw),
-  //         animationdelay: Math.random() + 1 + 's'
-  //     }
-  //       console.log(starStyle);
-  //       return (
-  //           <h3 style={starStyle}>*</h3>
-  //       )
-  //     }
-  //   }
-  //   return (
-  //     <div>
-  //       <GenerateStars />
-  //     </div>
-  //   )
-}
-
 function GenerateStars(num) {
   const arr = [];
-  for (let i = 0; i <= num; i++) {
-    let starStyle = {
-      fontSize: Math.random() * (2 - 0.83) + 0.83 + 'em',
-      top: Math.floor(Math.random() * vh),
-      left: Math.floor(Math.random() * vw),
-      animationdelay: Math.random() + 1 + 's',
-    };
-    arr.push(i);
+  for (let i = 0; i <= 22; i++) {
+    // let starStyle = {
+      let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
+      let tp = Math.floor(Math.random() * vh); //top
+      let lt = Math.floor(Math.random() * vw); //left
+      let ad = Math.random() + 1 + 's'; //delay
+    // };
+    arr.push(
+    <h3 style={{
+        fontSize: fs,
+        top: tp,
+        left: lt,
+        animationDelay: ad,
+    }}
+    >*</h3>
+    );
   }
-  return arr.map((n) => {
-    // return <h3 style={starStyle}>*</h3>;
-    return <h3>*</h3>;
-  });
+  console.log(arr)
+  return arr;
+  };
 
-  return <div></div>;
-}
 
 function Greeting(props) {
   const greets = ['Hello,', 'Hej,', 'Salut,', 'Hallo,', 'Hola,', 'Privet,', 'Ciao,', 'Oi,', 'Witaj,', 'Hei,'];
@@ -63,7 +35,7 @@ function Greeting(props) {
   return <h1>{greets[randGreet]}</h1>;
 }
 
-function Test(props) {
+function Test2(props) {
   return (
     <div id="bground">
       <GenerateStars num={23} />
@@ -110,6 +82,6 @@ function Test(props) {
   );
 }
 
-export default Test;
+export default Test2;
 
 

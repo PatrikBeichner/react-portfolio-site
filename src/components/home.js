@@ -1,46 +1,31 @@
 import React from 'react';
 
-function RenderStars(props) {
-  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-  console.log(vw, vh);
-
-  let numStars = 23;
-  const starfield = document.getElementById('bground');
-  //run on load
-  window.addEventListener('load', GenerateStars);
-
-  function GenerateStars() {
-    // event.stopPropagation;
-    //create stars and place them randomly based on width and height
-    for (let i = 0; i < numStars; i++) {
-      const star = document.createElement('h3');
-      star.innerHTML = '*';
-      let randomTop = Math.floor(Math.random() * vh);
-      let randomLeft = Math.floor(Math.random() * vw);
-
-      //tests
-      console.log(randomTop);
-      console.log(randomLeft);
-
-      //star styling
-      star.style.top = randomTop + 'px';
-      star.style.left = randomLeft + 'px';
-      star.style.webkitAnimationDelay = Math.random() + 1 + 's';
-      star.style.fontSize = Math.random() * (2 - 0.83) + 0.83 + 'em';
-
-      //test
-      console.log('stars');
-      starfield.appendChild(star);
-    }
+function GenerateStars(num) {
+  const arr = [];
+  for (let i = 0; i <= 22; i++) {
+    // let starStyle = {
+      let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
+      let tp = Math.floor(Math.random() * vh); //top
+      let lt = Math.floor(Math.random() * vw); //left
+      let ad = Math.random() + 1 + 's'; //delay
+    // };
+    arr.push(
+    <h3 style={{
+        fontSize: fs,
+        top: tp,
+        left: lt,
+        animationDelay: ad,
+    }}
+    >*</h3>
+    );
   }
-  return (
-    <div>
-      <GenerateStars />
-    </div>
-  )
-}
+  console.log(arr)
+  return arr;
+  };
+
 
 function Greeting(props) {
   const greets = ['Hello,', 'Hej,', 'Salut,', 'Hallo,', 'Hola,', 'Privet,', 'Ciao,', 'Oi,', 'Witaj,', 'Hei,',];
@@ -55,7 +40,7 @@ function Greeting(props) {
 function Home(props) {
   return (
     <div id="bground">
-      <RenderStars />
+      <GenerateStars />
       <div className="personal">
         <Greeting />
         <div className="text">
