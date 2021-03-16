@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Modal from './../components/Modal';
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
@@ -37,7 +38,26 @@ function Greeting(props) {
   )
 }
 
-function Home(props) {
+class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showModal: false
+    }
+  }
+
+  toggleModal = () => {
+    this.setState({
+      showModal: !this.state.showModal
+    })
+  };
+
+
+  shouldComponentUpdate(nextProps) {
+    return false;
+  }
+  render() {
+    const { showModal } = this.state;
   return (
     <div id="bground">
       <GenerateStars />
@@ -51,6 +71,19 @@ function Home(props) {
           <h3>*</h3>
         </div>
       </div>
+
+    <div>
+      <button className='modal-toggle-button' onClick={this.toggleModal} >
+        {!showModal ? 'Open Modal' : 'Close Modal'}
+      </button>
+      {
+        showModal ? (
+          <Modal>
+            <h1>a modal</h1>
+          </Modal>
+        ) : null
+      }
+    </div>
 
       <div className="contact">
         <ul>
@@ -82,6 +115,7 @@ function Home(props) {
       </div>
     </div>
   );
+  }
 }
 
 export default Home;

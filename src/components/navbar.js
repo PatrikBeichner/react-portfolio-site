@@ -1,26 +1,47 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import * as Entypo from '@styled-icons/entypo'
+// import { Air, Cross } from '@styled-icons/entypo-social'
+// import * as AiIcons from 'react-icons/ai'
+import { SidebarData } from './SidebarData'
+import './navbar.css';
 
-class Navbar extends Component {
+function Navbar() {
+    const [sidebar, setSidebar] = useState(false)
 
-    render() {
-        return (
-            <React.Fragment>
-                <div className='navbar'>
-                    <div className='logo'>
-                        
-                    </div>
-                    <div className='navlinks'>
-                        <ul className='nav'>
-                            <li>contact</li>
-                            <li>projects</li>
-                            <li>about</li>
-                        </ul>
-                    </div>
-                </div>
-            </React.Fragment>
-        )
-    }
+    const showSidebar = () => setSidebar(!sidebar);
+
+    return (
+        <>
+        
+          <div className="navbar">
+              <Link to='#' className='menu-bars'>
+                {/* <Entypo.Menu onClick={showSidebar}/> */}
+                <p onClick={showSidebar}>X</p>
+              </Link>
+          </div>
+          <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+              <ul className='nav-menu-items' onClick={showSidebar}>
+                  <li className='navbar-toggle'>
+                      <Link to='#' className='menu-bars'>
+                          <Entypo.Cross />
+                      </Link>
+                  </li>
+                  {SidebarData.map((item, index) => {
+                      return (
+                          <li key={index} className={item.cName}>
+                              <Link to={item.path}>
+                                  {item.icon}
+                                  <span>{item.title}</span>
+                              </Link>
+                          </li>
+                      )
+                  })}
+              </ul>
+          </nav>
+        </>
+    )
 }
 
-export default Navbar;
+export default Navbar

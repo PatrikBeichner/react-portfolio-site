@@ -1,41 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /*CSS starts here */
 body {
@@ -44,7 +7,7 @@ body {
   ;
 }
 
-.navbar {
+/* .navbar {
   min-height: 4em;
   background-color: rgb(32, 30, 35);
   margin: 0;
@@ -63,20 +26,20 @@ body {
   font-size: 1.5rem;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-}
+} */
 
 body {
   margin: 0;
   background-color: rgb(32, 30, 35);
 }
 
-.navbar {
+/* .navbar {
   min-height: 4em;
   background-color: rgb(32, 30, 35);
   margin: 0;
   position: relative;
 
-}
+} */
 .bground {
   position: absolute;
   width: 100vw;
@@ -96,7 +59,7 @@ h3 {
   }
 }
 
-.nav{ 
+/* .nav{ 
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -108,7 +71,7 @@ h3 {
   font-size: 1.5rem;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-}
+} */
 
 .contact {
   margin: auto;
@@ -167,7 +130,6 @@ ul > li {
 #linkedin {
   filter: invert(34%) sepia(83%) saturate(528%) hue-rotate(173deg) brightness(92%) contrast(94%);
   /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(101%); */
-
 }
 
 #github {
@@ -191,3 +153,43 @@ ul > li {
 .container {
   padding: 2px 16px;
 }
+
+
+/* Modal CSS */
+.my-modal {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 5px 10px 2px rgba(195,192,192,.5);
+  padding: 20px;
+  text-align: center;
+ }
+ .modal-close {
+  position: absolute;
+  right: 6px;
+  top: 9px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+ }
+ .modal-toggle-button {
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+ }
+ .modal-toggle-button:focus {
+  outline: none;
+ }
