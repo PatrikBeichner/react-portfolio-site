@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 import Modal from './../components/Modal';
+import GenerateStars from './../components/GenerateStars'
 
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+// const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+// const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-function GenerateStars(num) {
-  const arr = [];
-  for (let i = 0; i <= 22; i++) {
+// function GenerateStars(num) {
+//   const arr = [];
+//   for (let i = 0; i <= 22; i++) {
 
-      let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
-      let tp = Math.floor(Math.random() * vh); //top
-      let lt = Math.floor(Math.random() * vw); //left
-      let ad = Math.random() + 1 + 's'; //delay
+//       let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
+//       let tp = Math.floor(Math.random() * vh); //top
+//       let lt = Math.floor(Math.random() * vw); //left
+//       let ad = Math.random() + 1 + 's'; //delay
 
-    arr.push(
-    <h3 style={{
-        fontSize: fs,
-        top: tp,
-        left: lt,
-        animationDelay: ad,
-        }}
-    >*</h3>
-    );
-  }
-  console.log(arr)
-  return arr;
-  };
+//     arr.push(
+//     <h3 style={{
+//         fontSize: fs,
+//         top: tp,
+//         left: lt,
+//         animationDelay: ad,
+//         }}
+//     >*</h3>
+//     );
+//   }
+//   console.log(arr)
+//   return arr;
+//   };
 
 
 function Greeting(props) {
