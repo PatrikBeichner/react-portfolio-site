@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-function GenerateStars(num) {
-  const arr = [];
+class Stars extends Component {
+
+  shouldComponentUpdate(nextProps, nextState) {
+    return false;
+  }
+
+  render () {
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    const arr = [];
   for (let i = 0; i <= 22; i++) {
 
       let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
@@ -24,6 +30,9 @@ function GenerateStars(num) {
   }
   console.log(arr)
   return arr;
-  };
+  }
+}
 
-export default GenerateStars
+export default Stars;
+
+

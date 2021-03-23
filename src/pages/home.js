@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './../components/Modal';
 import GenerateStars from './../components/GenerateStars'
+import Stars from './../components/test'
 
 // const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 // const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
@@ -54,9 +55,9 @@ class Home extends Component {
   };
 
 
-  shouldComponentUpdate(nextProps) {
-    return false;
-  }
+  // shouldComponentUpdate(nextProps) {
+  //   return false;
+  // }
   render() {
     const { showModal } = this.state;
   return (
