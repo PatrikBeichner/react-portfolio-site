@@ -16,7 +16,7 @@ class Stars extends Component {
       let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize
       let tp = Math.floor(Math.random() * vh); //top
       let lt = Math.floor(Math.random() * vw); //left
-      let ad = Math.random() + 1 + 's'; //delay
+      let ad = Math.random() * 9 + 's'; //delay
 
     arr.push(
     <h3 style={{

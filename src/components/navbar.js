@@ -25,15 +25,15 @@ function Navbar() {
               <ul className='nav-menu-items' onClick={showSidebar}>
                   <li className='navbar-toggle'>
                       <Link to='#' className='menu-bars'>
-                          <Cross />
+                          <Cross size='35'/>
                       </Link>
                   </li>
                   {SidebarData.map((item, index) => {
                       return (
                           <li key={index} className={item.cName}>
                               <Link to={item.path}>
-                                  {item.icon}
                                   <span>{item.title}</span>
+                                  {item.icon}
                               </Link>
                           </li>
                       )

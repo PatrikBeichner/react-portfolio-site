@@ -8,37 +8,37 @@ export const SidebarData = [
     {
         title: 'home',
         path: '/',
-        icon: <Entypo.CircularGraph />,
+        icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
     {
         title: 'blog',
         path: '/blog',
-        icon: <Entypo.CircularGraph />,
+        icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
     {
         title: 'projects',
         path: '/projects',
-        icon: <Entypo.CircularGraph />,
+        icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
     {
         title: 'skills',
         path: '/skills',
-        icon: <Entypo.CircularGraph />,
+        icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
     {
         title: 'resume',
         path: '/resume',
-        icon: <Entypo.CircularGraph />,
+        icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
     {
         title: 'contact',
         path: '/contact',
-        icon: <Entypo.CircularGraph />,
+        icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
 ]
