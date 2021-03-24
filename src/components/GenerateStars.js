@@ -24,6 +24,7 @@ class Stars extends Component {
         top: tp,
         left: lt,
         animationDelay: ad,
+        zIndex: 1,
         }}
     >*</h3>
     );
