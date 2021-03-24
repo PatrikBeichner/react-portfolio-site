@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import * as Entypo from '@styled-icons/entypo'
-// import { Air, Cross } from '@styled-icons/entypo-social'
+// import * as entypo from '@styled-icons/entypo'
+import { Menu, Cross } from '@styled-icons/entypo'
 // import * as AiIcons from 'react-icons/ai'
 import { SidebarData } from './SidebarData'
 import './navbar.css';
@@ -17,15 +17,15 @@ function Navbar() {
         
           <div className="navbar">
               <Link to='#' className='menu-bars'>
-                {/* <Entypo.Menu onClick={showSidebar}/> */}
-                <p onClick={showSidebar}>X</p>
+            <Menu onClick={showSidebar} size='35' style={{backgroundColor: 'rgb(32, 30, 35)'}}/>
+                {/* <p onClick={showSidebar}>*</p> */}
               </Link>
           </div>
           <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
               <ul className='nav-menu-items' onClick={showSidebar}>
                   <li className='navbar-toggle'>
                       <Link to='#' className='menu-bars'>
-                          <Entypo.Cross />
+                          <Cross />
                       </Link>
                   </li>
                   {SidebarData.map((item, index) => {
@@ -45,3 +45,4 @@ function Navbar() {
 }
 
 export default Navbar
+

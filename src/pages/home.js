@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Modal from './../components/Modal';
+import Navbar from './../components/navbar';
 import GenerateStars from './../components/GenerateStars'
-import Stars from './../components/test'
+import Greeting from './../components/Greeting'
 
 // const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 // const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
@@ -30,15 +30,15 @@ import Stars from './../components/test'
 //   };
 
 
-function Greeting(props) {
-  const greets = ['Hello,', 'Hej,', 'Salut,', 'Hallo,', 'Hola,', 'Privet,', 'Ciao,', 'Oi,', 'Witaj,', 'Hei,',];
+// function Greeting(props) {
+//   const greets = ['Hello,', 'Hej,', 'Salut,', 'Hallo,', 'Hola,', 'Privet,', 'Ciao,', 'Oi,', 'Witaj,', 'Hei,',];
 
-  let randGreet = Math.floor(Math.random()*greets.length);
+//   let randGreet = Math.floor(Math.random()*greets.length);
 
-  return (
-    <h1>{greets[randGreet]}</h1>
-  )
-}
+//   return (
+//     <h1>{greets[randGreet]}</h1>
+//   )
+// }
 
 class Home extends Component {
   constructor(props) {
@@ -62,7 +62,9 @@ class Home extends Component {
     const { showModal } = this.state;
   return (
     <div id="bground">
+      <Navbar />
       <GenerateStars />
+      
       <div className="personal">
         <Greeting />
         <div className="text">
@@ -74,7 +76,7 @@ class Home extends Component {
         </div>
       </div>
 
-    <div>
+    {/* <div>
       <button className='modal-toggle-button' onClick={this.toggleModal} >
         {!showModal ? 'Open Modal' : 'Close Modal'}
       </button>
@@ -85,8 +87,8 @@ class Home extends Component {
           </Modal>
         ) : null
       }
-    </div>
-
+    </div> */}
+    
       <div className="contact">
         <ul>
           <li>
