@@ -63,6 +63,7 @@ class Home extends Component {
   return (
     <div id="bground">
       <Navbar />
+      <div className='blur'>
       <GenerateStars />
       
       <div className="personal">
@@ -117,6 +118,7 @@ class Home extends Component {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
   }
