@@ -9,8 +9,11 @@ class Stars extends Component {
 
   render () {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - 40;
     const arr = [];
+    console.log('vh' + vh )
+    console.log('vw' + vw )
+
   for (let i = 0; i <= 22; i++) {
 
       let fs = Math.random() * (2 - 0.83) + 0.83 + 'em'; //fontsize

@@ -9,7 +9,7 @@ import './navbar.css';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   const showSidebar = () => {
       setSidebar(!sidebar);
