@@ -9,7 +9,7 @@ class Stars extends Component {
 
   render () {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0) - 40;
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0 - 80);
     const arr = [];
     console.log('vh' + vh )
     console.log('vw' + vw )

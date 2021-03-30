@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <>
-      <div className='Blur' style={{backdropFilter: visible ? 'blur(5px)' : 'visible'}}>
+      {/* <div className='Blur' style={{backdropFilter: visible ? 'blur(5px)' : 'visible'}}> */}
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <Menu onClick={showSidebar} size="35" style={{ backgroundColor: 'rgb(32, 30, 35)', visibility: visible ? 'visible' : 'hidden'}}/>
@@ -45,7 +45,7 @@ function Navbar() {
             })}
           </ul>
         </nav>
-      </div>
+      {/* </div> */}
     </>
   );
 }

@@ -19,7 +19,7 @@ export const SidebarData = [
     },
     {
         title: 'projects',
-        path: '/projects',
+        path: '/Projects',
         icon: <Entypo.CircularGraph size='35'/>,
         cName: 'nav-text'
     },
