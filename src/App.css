@@ -193,3 +193,19 @@ ul > li {
  .modal-toggle-button:focus {
   outline: none;
  }
+
+ .blog {
+  margin: auto;
+  width: 50%;
+  margin-top: 15%;
+  /* border: 3px solid green; */
+  padding: 10px;
+  }
+
+  .contact-page {
+    margin: auto;
+    width: 50%;
+    margin-top: 15%;
+    /* border: 3px solid green; */
+    padding: 10px;
+    }

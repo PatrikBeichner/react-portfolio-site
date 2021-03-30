@@ -9,9 +9,11 @@ export default function Contact() {
         <>
         <GenerateStars />
         <Navbar />
-            <div className='contact'>
-                <h1> hi this is contact</h1>
-                <p> heres a bunch iof tesdklsjdksjhfkshfkshfksjfhahfjshfjksf</p>
+            <div className='contact-page'>
+                <div className='text'>
+                    <h1> hi this is contact</h1>
+                    <p> heres a bunch iof tesdklsjdksjhfkshfkshfksjfhahfjshfjksf</p>
+                </div>
             </div>
         </>
     )

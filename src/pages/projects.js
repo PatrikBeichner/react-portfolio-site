@@ -10,8 +10,10 @@ export default function Projects() {
         <GenerateStars />
         <Navbar />
             <div className='projects'>
-                <h1> hi this is projects</h1>
-                <p> heres a bunch iof tesdklsjdksjhfkshfkshfksjfhahfjshfjksf</p>
+                <div className='text'>
+                    <h1> hi this is projects</h1>
+                    <p> heres a bunch iof tesdklsjdksjhfkshfkshfksjfhahfjshfjksf</p>
+                </div>
             </div>
         </>
     )

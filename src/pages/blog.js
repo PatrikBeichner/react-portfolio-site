@@ -10,8 +10,10 @@ export default function Blog() {
         <GenerateStars />
         <Navbar />
             <div className='blog'>
-                <h1> hi this is blog</h1>
-                <p> heres a bunch iof tesdklsjdksjhfkshfkshfksjfhahfjshfjksf</p>
+                <div className='text'>
+                    <h1> hi this is blog</h1>
+                    <p> heres a bunch iof tesdklsjdksjhfkshfkshfksjfhahfjshfjksf</p>
+                </div>
             </div>
         </>
     )
