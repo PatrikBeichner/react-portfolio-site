@@ -22,7 +22,7 @@ class Stars extends Component {
       let ad = Math.random() * 9 + 's'; //delay
 
     arr.push(
-    <h3 style={{
+    <h3 className='stars' style={{
         fontSize: fs,
         top: tp,
         left: lt,

@@ -209,3 +209,7 @@ ul > li {
     /* border: 3px solid green; */
     padding: 10px;
     }
+
+    .stars {
+      z-index: 1;
+    }
