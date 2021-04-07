@@ -212,6 +212,7 @@ ul > li {
 
     .stars {
       z-index: 1;
+      display: flex;
     }
 
     .blur {
@@ -225,12 +226,12 @@ ul > li {
     font-family: 'Lato', sans-serif;
     color: rgb(238, 238, 238);
     background-color: rgb(32, 30, 35);
-    border-style: solid;
-    border-color: green;
+
     z-index: 99;
   }
 
   .blog {
     background-color: rgb(32, 30, 35);
     z-index: 99;
+    display: flex;
   }
