@@ -61,7 +61,7 @@ class Home extends Component {
   render() {
     const { showModal } = this.state;
   return (
-    <div id="bground">
+    <div className='blur'>
       <Navbar />
       {/* <div className='blur'> */}
       <GenerateStars />
