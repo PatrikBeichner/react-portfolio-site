@@ -113,7 +113,7 @@ ul > li {
   /* You can also add some margins here to make it look prettier */
   zoom:1;
   *display:inline;
-  /* padding-right: 6rem; */
+  padding-right: 6rem;
   /* this fix is needed for IE7- */
 }
 

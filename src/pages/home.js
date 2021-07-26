@@ -92,25 +92,25 @@ class Home extends Component {
     
       <div className="contact">
         <ul>
-          <li>
+          <li className='homeLink'>
             <a href="/blog">
               blog
               <img class="icon" id="blog" src="book.svg" alt='blog icon'/>
             </a>
           </li>
-          <li>
+          <li className='homeLink'>
             <a href="https://twitter.com/PatrikBeichner">
               twitter
               <img class="icon" id="twitter" src="../twitter.svg" alt='twitter icon'/>
             </a>
           </li>
-          <li>
+          <li className='homeLink'>
             <a href="https://github.com/PatrikBeichner">
               github
               <img class="icon" id="github" src="github.svg" alt='github icon'/>
             </a>
           </li>
-          <li>
+          <li className='homeLink'>
             <a href="https://www.linkedin.com/in/patrik-b-974b34ab/">
               linkedin
               <img class="icon" id="linkedin" src="linkedin.svg" alt='linkedin icon'/>
