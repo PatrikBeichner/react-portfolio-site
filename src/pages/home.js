@@ -93,7 +93,7 @@ class Home extends Component {
       <div className="contact">
         <ul>
           <li>
-            <a href="#">
+            <a href="/blog">
               blog
               <img class="icon" id="blog" src="book.svg" alt='blog icon'/>
             </a>
