@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navbar from './../components/navbar';
+// import Navbar from './../components/navbar';
 import GenerateStars from './../components/GenerateStars'
 import Greeting from './../components/Greeting'
 
@@ -61,8 +61,9 @@ class Home extends Component {
   render() {
     const { showModal } = this.state;
   return (
-    <div className='blur'>
-      <Navbar />
+    <div>
+    {/* <div className='blur'> */}
+      {/* <Navbar /> */}
       {/* <div className='blur'> */}
       <GenerateStars />
       
